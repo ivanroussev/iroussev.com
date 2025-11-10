@@ -34,9 +34,7 @@ spec:
         stage('Build Docker Image') {
             steps {
                 container('docker') {
-                    dir('frontend') {
-                        sh "docker build -t iroussevcom/site:${env.BUILD_ID} ."
-                    }
+                    sh "docker build -t iroussevcom/site:${env.BUILD_ID} ."
                 }
             }
         }
