@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+:root {
+  --black: #070707;
+  --grey: #8d99ae;
+  --green: #16e003;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: var(--black);
+}
+
+.header-title {
+  width: 15rem;
+}
+
+
+
+.home {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+.title-name {
+  color: var(--grey);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.titles h1 {
+  font-size: 100px;
+}
+
+.title-name {
+  font-size: 75px;
+}
+
+.homepage-icon {
+  width: 48px;
+}
+
+.orange-dot {
+  color: var(--green);
+}
+
+.homepage-img {
+  width: 25rem;
+  margin-right: 0;
+  border-radius: 50%;
+}
+
+.main-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 16rem;
+}
+
+
+.yaml-block {
+  font-family: 'Fira Code', 'Source Code Pro', monospace;
+  font-size: 1rem;
+  color: #16e003;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #00ff90;
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
+}
+
+.cursor.stopped {
+  animation: none;  /* stop blinking */
+  opacity: 1;       /* keep it visible */
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.terminal-block {
+  font-family: 'Fira Code', 'Source Code Pro', monospace;
+  font-size: 1rem;
+  color: #e0e0e0;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-top: 1rem;
+  width: fit-content;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  min-height: 120px;
+  overflow: hidden;
+}
+
+.prompt {
+  color: #00ff90;
+  margin-right: 0.5rem;
+}
+
+
+@media (max-width: 800px) {
+  .content {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-home {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
   }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titles h1 {
+    font-size: 40px;
+  }
+
+  .ivan-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homepage-img {
+    width: 15rem;
+    margin-right: 0;
+    border-radius: 50%;
+  }
+
+  .title {
+    font-size: xx-large;
+    color: var(--black);
+  }
+
 }
