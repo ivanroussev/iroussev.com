@@ -1,4 +1,5 @@
 import IvanSelfie from '../images/ivan-selfie.png'
+
 import React, { useEffect, useState } from 'react';
 
 function Home() {
@@ -53,7 +54,7 @@ function Home() {
                 <div className="titles">
                     <h1 className="title-name">
                         Ivan <strong>Roussev</strong>
-                        <strong className="orange-dot">,</strong>
+                        {/* <strong className="orange-dot">,</strong> */}
                     </h1>
 
                     <div className="terminal-container">

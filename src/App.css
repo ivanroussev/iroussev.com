@@ -1,6 +1,6 @@
 :root {
-  --black: #070707;
-  --grey: #8d99ae;
+  --black: #131515;
+  --grey: #a7c450;
   --green: #16e003;
 
 }
@@ -58,9 +58,9 @@ h1 {
   width: 48px;
 }
 
-.orange-dot {
+/* .orange-dot {
   color: var(--green);
-}
+} */
 
 .homepage-img {
   width: 25rem;
@@ -80,7 +80,7 @@ h1 {
 .yaml-block {
   font-family: 'Fira Code', 'Source Code Pro', monospace;
   font-size: 1rem;
-  color: #16e003;
+  color: var(--grey);
   padding: 1rem 1.5rem;
   border-radius: 10px;
   white-space: pre-wrap;
@@ -92,7 +92,7 @@ h1 {
 .cursor {
   display: inline-block;
   width: 10px;
-  background-color: #00ff90;
+  background-color: var(--grey);
   margin-left: 2px;
   animation: blink 1s step-start infinite;
 }
@@ -110,20 +110,19 @@ h1 {
 .terminal-block {
   font-family: 'Fira Code', 'Source Code Pro', monospace;
   font-size: 1rem;
-  color: #e0e0e0;
+  color: #FFFAFB;
   padding: 1rem 1.5rem;
   border-radius: 10px;
   white-space: pre-wrap;
   line-height: 1.6;
   margin-top: 1rem;
   width: fit-content;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   min-height: 120px;
   overflow: hidden;
 }
 
 .prompt {
-  color: #00ff90;
+  color: #339989;
   margin-right: 0.5rem;
 }
 
