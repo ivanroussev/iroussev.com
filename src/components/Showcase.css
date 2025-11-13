@@ -31,6 +31,30 @@
 .showcase-card-body { flex: 1; padding-right: 12px; }
 .showcase-card-placeholder { width: 120px; height: 64px; background: rgba(255,255,255,0.01); border-radius: 6px; display:flex; align-items:center; justify-content:center; color: rgba(255,255,255,0.45); font-weight:600; }
 
+/* Mobile-specific adjustments for iPhones */
+@media (max-width: 480px) {
+  .showcase-section { padding: 20px 12px; }
+  .showcase-heading { font-size: 20px; }
+  .showcase-desc { font-size: 14px; }
+
+  .showcase-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Stack card content and make placeholder full width */
+  .showcase-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .showcase-card-body { padding-right: 0; }
+
+  .showcase-card-placeholder {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 900px) {
   .showcase-grid { grid-template-columns: 1fr; }
 }
