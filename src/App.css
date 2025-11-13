@@ -61,21 +61,16 @@ h1 {
   background: rgba(167,196,80,0.06);
 }
 
-/* Main content area no longer needs a left offset */
 .main { margin-left: 0; }
 
-/* Enable vertical scroll snapping */
+
 html, body, #root, .app {
   height: 100%;
 }
 
 .app {
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
-}
-
-.page-section {
-  scroll-snap-align: start;
+  /* normal scrolling container */
+  overflow: visible;
 }
 
 /* Smooth scrolling */
@@ -85,7 +80,8 @@ html {
 
 /* Page sections layout - stack sections vertically and make them full-height */
 .page-section {
-  min-height: 100vh;
+  /* allow sections to size naturally for normal scrolling */
+  min-height: auto;
   padding: 3rem 2rem;
   box-sizing: border-box;
   background: transparent;
@@ -120,7 +116,7 @@ body:not(:target) .sidebar .nav-item[href="#home"] {
 
 
 .home {
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -74,7 +74,13 @@ function About() {
           <div className="sidebar-card">
             <h3 className="about-subheading">Grafana Dashboard</h3>
             <p className="about-paragraph" style={{ marginTop: 6 }}>Embed a live Grafana dashboard here or show an architecture diagram.</p>
-            <div className="grafana-placeholder"><iframe src="https://grafana.iroussev.com/d-solo/adg5vv2/custom-dashboard?orgId=1&from=1763043499346&to=1763065099346&timezone=browser&panelId=panel-1&__feature.dashboardSceneSolo=true" width="450" height="200" frameborder="0"></iframe></div>
+            <div className="grafana-placeholder">
+              <iframe
+                src="https://grafana.iroussev.com/d-solo/adg5vv2/custom-dashboard?orgId=1&from=1763043499346&to=1763065099346&timezone=browser&panelId=panel-1&__feature.dashboardSceneSolo=true"
+                title="Grafana dashboard"
+                style={{ width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
           </div>
           <div className="sidebar-card" style={{ marginTop: 12 }}>
             <h3 className="about-subheading">Certifications</h3>
