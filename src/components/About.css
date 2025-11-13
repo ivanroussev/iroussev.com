@@ -1,0 +1,132 @@
+.about-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  color: var(--snow);
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--grey);
+  margin: 0 0 12px 0;
+}
+
+.about-paragraph {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-subheading {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--snow);
+}
+
+.about-list {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.85);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+  text-align: left;
+}
+
+.tool-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+.tool-fallback {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.03);
+}
+
+.tool-name { display: inline-block; }
+
+.sidebar-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.grafana-placeholder {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.01);
+  margin-top: 10px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-links a {
+  color: var(--snow);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.learning-list {
+  margin-top: 8px;
+  color: rgba(255,255,255,0.9);
+}
+
+.journey-list {
+  margin-top: 8px;
+  color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .grafana-placeholder { height: 150px; }
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+}

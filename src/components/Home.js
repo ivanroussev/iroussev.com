@@ -49,13 +49,15 @@ function Home() {
     }, [showYaml, yamlContent]);
 
     return (
-        <div className="home-container" id="home">
+        <div className="home-container">
             <div className="main-home">
                 <div className="titles">
                     <h1 className="title-name">
                         Ivan <strong>Roussev</strong>
                         {/* <strong className="orange-dot">,</strong> */}
                     </h1>
+
+                    <p className="home-desc">DevOps Engineer — Cloud Engineer</p>
 
                     <div className="terminal-container">
                         <pre
